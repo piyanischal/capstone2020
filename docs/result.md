@@ -14,7 +14,9 @@ A job is communicated as a simple JSON object where key names and values are low
   * `data`: The raw JSON data received from querying regulations.gov.
 * `jobs`: A list of new job objects. These job objects omit the job_id field. Jobs are retrieved through the JSON data collected from the regulations server.
 
-## Data Storage
+See `job.md` for specification of each job.
+
+## Data Storage Structure
 
 ```
 Data (folder)
@@ -25,7 +27,7 @@ Data (folder)
         basic_document.json
         document.json
 ```     
-* Data can be considered the root
+* For example, Data can be considered the root
 
 ```
 EPA/EPA-HQ-OAR-2011-0028/EPA-HQ-OAR-2011-0028-0108/document.json
@@ -37,7 +39,7 @@ File: document.json
 ```
 
 
-## Examples
+## Examples of Result Objects
 
 * Docket
   * Returns data concerning a docket
