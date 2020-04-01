@@ -7,11 +7,11 @@ a POST request is invoked by the client to the server. It returns a JSON file wi
 A job is communicated as a simple JSON object where key names and values are lower case:
 
 * `client_id`: A unique identifier of the client returning the result.
-* `job_id`: ID of the current job object.
-* `data`: A list of JSON objects. This object consists of a folder name, file name, and data
+* `job_id`: The id of job being returned.
+* `data`: A list of JSON objects. Each object in the list contains folder name, file name, and data
   * `folder_name`: The path to the location of where the data should be placed. Check data storage section to see the hierarchy of the path.
   * `file_name`: Name of the file to which the data will be stored. Named after the type of data it is storing.
-  * `data`: The raw JSON data recieved from querying regulations.gov.
+  * `data`: The raw JSON data received from querying regulations.gov.
 * `jobs`: A list of new job objects. These job objects omit the job_id field. Jobs are retrieved through the JSON data collected from the regulations server.
 
 ## Data Storage
