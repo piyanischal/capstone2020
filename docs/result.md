@@ -14,7 +14,6 @@ A job is communicated as a simple JSON object where key names and values are low
   * `data`: The raw JSON data received from querying regulations.gov.
 * `jobs`: A list of new job objects. These job objects omit the job_id field. Jobs are retrieved through the JSON data collected from the regulations server.
 
-
 See `job.md` for specification of each job.
 
 ## Data Storage Structure
